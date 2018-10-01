@@ -21,6 +21,7 @@ $font-size: 14px;
 $box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.12);
 
 $highlight-border: 1px solid rgba($color: $highlight-color-muted, $alpha: 0.4);
+$highlight-box-shadow: 0 0 12px rgba($color: $highlight-color-muted, $alpha: 0.2) inset;
 
 html, body {
   margin: 0;
@@ -94,30 +95,32 @@ html, body {
   
         img {
           border-radius: 100%;
+          padding: $spacing;
           width: 100%;
           border: $highlight-border;
           position: relative;
           top: $spacing;
+          box-shadow: $highlight-box-shadow;
         }
       }
     }
-    
-    
   }
-
-  
-
 }
 
 .project-post {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: $spacing 0;
 
   img {
     width: $spacing * 10;
-    padding: $spacing * 2;
+    padding: $spacing;
+    margin: $spacing;
+    border-radius: 100%;
+    border: $highlight-border;
+    box-shadow: $highlight-box-shadow;
   }
 
   .project-header {
@@ -128,6 +131,7 @@ html, body {
     &:hover {
       background-color: rgba($color: $highlight-color-muted, $alpha: 0.05);
       border: $highlight-border;
+      box-shadow: $highlight-box-shadow;
     }
 
     a {
@@ -165,7 +169,7 @@ table {
   .project-post {
     flex-direction: column;
     img {
-      padding: $spacing;
+      
     }
     .project-header {
       text-align: center;

@@ -8,7 +8,7 @@ $highlight-color-muted: #08a85d;
 $highlight-color-desat: #72bd9a;
 
 $default-maxwidth: 600px;
-$first-break-maxwidth: 400px;
+$first-break-maxwidth: 500px;
 $second-break-maxwidth: 300px;
 $third-break-maxwidth: 200px;
 
@@ -41,6 +41,7 @@ html, body {
 
 .nav {
   width: 100%;
+  height: $spacing * 5;
   display: flex;
   justify-content: center;
   background-color: $foreground-color;
@@ -88,6 +89,7 @@ html, body {
 
     .header {
       display: flex;
+
       .image-container {    
         max-width: 30%;
         margin: 0;
@@ -138,11 +140,13 @@ html, body {
       font-family: "quicksand";
       color: $primary-color;
       text-decoration: none;
+      font-size: 1rem;
     }
 
     small {
       color: $primary-color-muted;
       font-family: "Slabo 27px";
+      font-size: 0.9rem;
     }
 
   }
@@ -162,15 +166,22 @@ table {
 }
 
 @media only screen and (max-width: 1000px) {
-  .main .sub-main, .nav ul {
+  .main .sub-main, .main .sub-main .content, .nav ul {
     max-width: $first-break-maxwidth;
+  }
+
+  .content > div {
+    text-align: center;
+  }
+
+  iframe {
+    max-width: $first-break-maxwidth;
+    max-height: $first-break-maxwidth / 1.78;
   }
 
   .project-post {
     flex-direction: column;
-    img {
-      
-    }
+
     .project-header {
       text-align: center;
       padding: $spacing / 2;
@@ -178,13 +189,25 @@ table {
   }
 
   @media only screen and (max-width: 600px) {
-    .main .sub-main, .nav ul {
-      max-width: none;
+    .main .sub-main, .main .sub-main .content, .nav ul {
+      max-width: none;     
     }
 
-    @media only screen and (max-width: 400px) {
-      .main .sub-main, .nav ul {
-        max-width: none;
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    iframe {
+      max-width: $second-break-maxwidth;
+      max-height: $second-break-maxwidth / 1.78;
+    }
+
+    @media only screen and (max-width: 350px) {
+      iframe {
+        max-width: $third-break-maxwidth;
+        max-height: $third-break-maxwidth / 1.78;
       }
     }
   }

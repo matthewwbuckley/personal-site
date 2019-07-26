@@ -33,8 +33,7 @@ const IndexPage = () => (
         </p>
         <p>
           I am quiet, patient, and happily boring. I have an interest in games, science, politics, and technology. 
-          I am exploring internet-based development because I think that everyone would get along if they started
-          communicating openly with each other. 
+          I am exploring internet-based development because the information age is powerful and scary. 
         </p>
         <br/>
         <h3>Contact</h3>

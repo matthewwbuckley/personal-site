@@ -28,6 +28,7 @@ const Layout = ({ children, data }) => (
           ]}
         />
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
 
         <div className="main">

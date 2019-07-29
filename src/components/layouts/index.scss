@@ -1,11 +1,11 @@
-$background-color: #eee;
-$foreground-color: #f7f7f7;
-$primary-color: #333;
-$border-color: #ccc;
+$background-color: #FBF2C0;
+$foreground-color: #544343;
+$primary-color: #544343;
+$border-color: #56282D;
 $primary-color-muted: #aaa;
-$highlight-color: #00db74; //#ff4500
-$highlight-color-muted: #08a85d;
-$highlight-color-desat: #72bd9a;
+$highlight-color: #E1CE7A; //#ff4500
+$highlight-color-muted: #E1CE7A;
+$highlight-color-contrast: #773344;
 
 $default-maxwidth: 600px;
 $first-break-maxwidth: 500px;
@@ -16,7 +16,7 @@ $spacing: 12px;
 
 $border-radius: 4px;
 
-$font-size: 14px;
+$font-size: 16px;
 
 $box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.12);
 
@@ -26,18 +26,20 @@ $highlight-box-shadow: 0 0 12px rgba($color: $highlight-color-muted, $alpha: 0.2
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "quicksand";
+  font-family: "Noto Serif";
   background-color: $background-color;
   color: $primary-color;
   font-size: $font-size;
 }
 
 ::selection {
-  background: $highlight-color-desat; /* WebKit/Blink Browsers */
+  background: $highlight-color; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $highlight-color-desat; /* Gecko Browsers */
+  background: $highlight-color; /* Gecko Browsers */
 }
+
+
 
 .nav {
   width: 100%;
@@ -45,7 +47,7 @@ html, body {
   display: flex;
   justify-content: center;
   background-color: $foreground-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 2px solid $border-color;
   //box-shadow: $box-shadow;
 
 
@@ -64,10 +66,12 @@ html, body {
     
     a {
       text-decoration: none;
-
+      color: $highlight-color;
       li {
         text-decoration: none;
         p {
+          font-weight: 500;
+          font-size: 20px;
           text-decoration: none;
         }
       }
@@ -79,6 +83,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: justify;
 
   .sub-main {
     max-width: $default-maxwidth;
@@ -99,10 +104,8 @@ html, body {
           border-radius: 100%;
           padding: $spacing;
           width: 100%;
-          border: $highlight-border;
           position: relative;
           top: $spacing;
-          box-shadow: $highlight-box-shadow;
         }
       }
     }
@@ -121,30 +124,28 @@ html, body {
     padding: $spacing;
     margin: $spacing;
     border-radius: 100%;
-    border: $highlight-border;
-    box-shadow: $highlight-box-shadow;
   }
 
   .project-header {
-  padding: $spacing;
-  border-radius: $border-radius;
-  border: 1px solid transparent;
-
+    padding: $spacing;
     &:hover {
-      background-color: rgba($color: $highlight-color-muted, $alpha: 0.05);
-      border: $highlight-border;
-      box-shadow: $highlight-box-shadow;
+      color: $border-color;
+      cursor: pointer;
     }
 
     a {
-      font-family: "quicksand";
       color: $primary-color;
       text-decoration: none;
       font-size: 1rem;
+
+      &:hover {
+        color: $highlight-color-contrast;
+        cursor: pointer;
+      }
     }
 
     small {
-      color: $primary-color-muted;
+      color: $highlight-color;
       font-family: "Slabo 27px";
       font-size: 0.9rem;
     }
@@ -215,17 +216,23 @@ table {
 
 h1, h3 {
   font-family: "Slabo 27px";
-  font-weight: 400;
+
 }
 
 h1 {
   font-size: 2rem;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.2rem;
   letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 
@@ -234,7 +241,7 @@ a {
   font-family: "Slabo 27px";
   font-size: 1.15rem;
   
-  color: $highlight-color-muted;
+  color: $highlight-color-contrast;
   letter-spacing: 0.5px;
 
   transition: all 0.2s;

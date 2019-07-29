@@ -20,7 +20,7 @@ const CV = () => (
       I have used my communication skills while working within a team and while supervising others. The culmination of my work was a written thesis which reinforced planning and logically building an argument. 
     </p>
     <p>
-      The enjoyment I got from writing scripts used to automize data analysis prompted me to transition into programming and wev development.
+      The enjoyment I got from writing scripts used to automize data analysis prompted me to transition into programming and web development.
     </p>
     
     
@@ -51,39 +51,10 @@ const CV = () => (
       2013 and 2015 to use a variety of x-ray and electron techniques. Data was analysed using custom scripts to derive information on species interactions.
     </p>	
 
-    <h3>Employment History</h3>
-    <table>
-      <tr>
-        <td >'13-'14</td>
-        <td><b>Physical Chemistry Lab Demonstrator</b><i> The University of Nottingham, University Park, Nottingham. NG7 2RD.</i><br/>Aid and support undergraduate students carrying out planned physical and theoretical experiments within an inclusive team of two graduates and a senior lecturer. </td> 
-      </tr>
-      <tr>
-        <td>'11</td>
-        <td><b>Summer Research Assistant</b><i> The University of Nottingham, University Park, Nottingham. NG7 2RD.</i><br/>Work independently under the supervision of Dr Pete Licence synthesising amino acid based Ionic Liquids.</td>
-      </tr>
-      <tr>
-          <td>'10</td>
-          <td><b>Summer Research Assistant</b><i> The University of Nottingham, University Park, Nottingham. NG7 2RD.</i><br/>Work independently under the supervision of Dr Nick Besley running theoretical calculations to simulate protein spectra.</td>
-      </tr>
-    </table>
-
-    <h3>References</h3>	
-    
-    <table >
-          <tr>
-        <td ><b>Professor Robert Jones</b><br/>PhD Supervisor</td>
-        <td><i>The University of Nottingham, University Park, Nottingham. NG7 2RD.</i></td> 
-        </tr>
-        <tr>
-          <td ><b>Professor Peter Licence</b><br/>PhD Supervisor</td>
-          <td><i>The University of Nottingham, University Park, Nottingham. NG7 2RD.</i></td>
-
-      </tr>
-      <tr>
-          <td ><b>Dr Nick Besley</b><br/>Summer Project Supervisor</td>
-          <td><i>The University of Nottingham, University Park, Nottingham. NG7 2RD.</i></td>
-      </tr>
-    </table>
+    <h3>Published Personal Projects</h3>
+    <p>Boost Ball - A game developed for android using Unreal Engine. Released for free. <a href="https://play.google.com/store/apps/details?id=com.ScrireGames.BoostBall&hl=en">Downloadable from the Google Play Store.</a></p>
+    <p>Personal Site - This site is built with the static site generator Gatsby.</p>
+    <p>iCYOA -An interactive story builder and player built with React and using Strapi for the backend with ~300 signups. <a href="http://www.icyoa.io">Please feel free to sign up and try the creator.</a></p>
 
     <h3>Publications</h3>
     

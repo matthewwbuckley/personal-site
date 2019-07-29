@@ -12,7 +12,7 @@ const IndexPage = () => (
           <p>Learning the MERN stack; Mongo, Express, React and Node, along with associated technologies.</p>
         </div>
         <div className="image-container">
-          <img src="./images/self-greendots-trans.png" alt=""/>
+          <img src="./images/self-sm.png" alt=""/>
         </div>
       </div>
       <div className="content">
